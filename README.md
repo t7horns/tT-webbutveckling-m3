@@ -4,13 +4,13 @@ This repo contains a website created as a part of a course at MIUN. The course f
 
 ## Website description
 
-- placeholder -
+Naturupplevelser och grejer. "Non-functional" website, to showcase mockup -> product.
 
 ## Technologies Used
 
 - HTML
 - CSS
-- placeholder figma/wireframe/mockup/layout technologies -
+- Designed layout via wireframe and mockups using figma
 
 ## Project Structure
 
@@ -20,7 +20,6 @@ This repo contains a website created as a part of a course at MIUN. The course f
 ### Assets
 - `css\style.css` - styling and layout
 - images/ - images
-- placeholder -
 
 ### Other
 - `README.md` - repository presentation
