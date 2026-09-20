@@ -17,21 +17,28 @@
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;
+
 }
 
 * {
     box-sizing: border-box;
-    color: var(--text-color);
-    background-color: var(--background-primary-color);
+    color: var(--text-color);    
+}
+
+/* Base transparency for text */
+p, nav, h1, h2, h3, h4, h5, h6, ul, li, a{
+    background-color: transparent;
 }
 
 body {
+    background-color: var(--background-primary-color);
     font-family: var(--font-body);
     margin: 0;
     padding: 0;
 }
 
 header {
+    background-color: var(--accent-primary-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +60,20 @@ nav a {
     text-decoration: none;
 }
 
+/* Class specifics */
+
+.logo-container {
+    background-color: transparent;
+}
+
+
 
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100%; */
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
 }
 
 
