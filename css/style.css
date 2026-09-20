@@ -22,11 +22,11 @@
 * {
     box-sizing: border-box;
     color: var(--text-color);
+    background-color: var(--background-primary-color);
 }
 
 body {
     font-family: var(--font-body);
-    background-color: var(--background-primary-color);
     margin: 0;
     padding: 0;
 }
@@ -36,7 +36,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background-color: var(--gui-primary-color);
+
 }
 
 nav ul {
