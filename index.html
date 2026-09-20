@@ -11,7 +11,7 @@
     <body>
         <header>
             <div class="header-banner">
-                <img src="images/logotyp_svart.png" alt="Logotyp svart">
+                <img src="images/logotyp_svart.png" alt="Logotyp svart" class="nonpadded-image">
                 <p>NORRGLÄNTAN</p>
             </div>
             <nav>
@@ -28,26 +28,27 @@
 
         <main>
             <!-- Sektion för introducerance innehåll t.ex. bildbanner och initial text -->
-            <section class="introduktion">
+            <section class="banner" type="box">
                 <div class="image-container" type="banner">
-                    <img src="images/hero.jpg" alt="Banner-bild som visar skog och sjö">
+                    <img src="images/hero.jpg" alt="Banner-bild som visar skog och sjö" class="nonpadded-image">
                 </div>
                 <h1>Naturen väntar i Norrgläntan</h1>
                 <p>Upptäck vidsträckta skogar, stilla sjöar och storslagna vyer. I Norrgläntan finns plats för både äventyr och avkoppling.</p>
                 <a class="button">Upptäck Norrgläntan</a>
-                
+            </section>
+           <section class="introduktion" type="box">
                 <h2>Nära till naturen</h2>
                 <p>I Norrgläntan är naturen alltid nära. Här möts skogar, sjöar och berg i ett landskap som bjuder in till upplevelser året runt. Vandra längs slingrande leder, ta dig ut på vattnet eller hitta en lugn plats och njut av omgivningarna.</p>
                 <p>Oavsett om du söker äventyr eller bara vill komma bort en stund finns det alltid något nytt att upptäcka.</p>
             </section>
             
             <!-- Sektion för aktivitet-innehåll -->
-            <section class="aktivitet">
+            <section class="aktivitet"type="box">
                 <h2>Upplev Norrgläntan</h2>
                 
                 <article class="card">
                     <div class="image-container" type="card-image">
-                        <img src="images/vandra.jpg" alt="Bild som visar skogsstig">
+                        <img src="images/vandra.jpg" alt="Bild som visar skogsstig" class="nonpadded-image">
                     </div>
                     <h3>Vandra</h3>
                     <p>Följ leder genom skog och över öppna höjder. Här finns vandringar för både korta utflykter och längre dagar ute i naturen.</p>
@@ -55,7 +56,7 @@
 
                 <article class="card">
                     <div class="image-container" type="card-image">
-                        <img src="images/paddla.jpg" alt="Bild som visar kanot på sjön">
+                        <img src="images/paddla.jpg" alt="Bild som visar kanot på sjön" class="nonpadded-image">
                     </div>
                     <h3>Paddla</h3>
                     <p>Ta dig ut på Norrgläntans sjöar och upptäck landskapet från vattnet. Hitta din egen vik eller stanna till vid någon av rastplatserna längs stranden.</p>
@@ -63,7 +64,7 @@
 
                 <article class="card">
                     <div class="image-container" type="card-image">
-                        <img src="images/upptack.jpg" alt="Bild som visar utsiktsplats med vy över skog och sjö">
+                        <img src="images/upptack.jpg" alt="Bild som visar utsiktsplats med vy över skog och sjö" class="nonpadded-image">
                     </div>
                     <h3>Upptäck</h3>
                     <p>Ibland är det bästa äventyret det som inte är planerat. Utforska skogar och utsiktsplatser och upptäck dina egna favoriter längs vägen.</p>
@@ -79,11 +80,10 @@
         </main>
 
         <footer>
-            <hr class="divider">
             <div class="footer-grid">
                 <div class="footer-banner">
-                    <img src="images/logotyp_vit.png" alt="Logotyp vit">
-                    <p><strong>NORRGLÄNTAN</strong></p>
+                    <img src="images/logotyp_vit.png" alt="Logotyp vit" class="nonpadded-image">
+                    <h3><strong>NORRGLÄNTAN</strong><h3>
                     <p>Naturupplevelser året runt.</p>
                 </div>
 
@@ -104,7 +104,7 @@
                 </div>
             </div>
 
-            <aside aria-label="projektinformation">
+            <aside aria-label="projektinformation" class="footer-info">
                 <p>© 2026 Mathias Thorgren. OBS: Detta är en fiktiv webbplats skapad för ett skolprojekt.</p>
             </aside>
         </footer>

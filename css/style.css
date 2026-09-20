@@ -17,17 +17,41 @@
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;
-
 }
 
 * {
     box-sizing: border-box;
-    color: var(--text-color);    
+    color: var(--text-color); 
 }
 
+/* Border design */
+[type="box"] {
+    border-bottom: 0.25px solid var(--gui-border-color)
+}
+
+
+strong {
+    font-size: 34px;
+    font-weight: 700;
+}
 /* Base transparency for text */
 p, nav, h1, h2, h3, h4, h5, h6, ul, li, a{
     background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    margin: 0;
+}
+
+/* Padding fix for non-spanning elements.. */
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0.25rem;
+}
+
+/* Wider padding for others */
+footer {
+    padding: 1rem;
 }
 
 body {
@@ -66,6 +90,15 @@ img {
     height: auto;
 }
 
+.nonpadded-image {
+    padding: 0;
+}
+
+
+.cta {
+    background-color: var(--gui-primary-color);
+}
+
 footer {
     background-color: var(--accent-primary-color);
 }
@@ -74,7 +107,7 @@ footer {
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 5px;
 }
 /* Make the first element span both columns and center on mobile */
 .footer-grid > *:first-child {
@@ -82,17 +115,28 @@ footer {
     text-align: center;
 }
 
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin: 0.25rem 0;
+    }
+    margin-bottom: 1rem;
+}
+
 /* image styling */
 .header-banner img {
-    width: 22px;
+    width: 64px;
     height: auto;
     display: block;
 }
 
 .footer-banner img {
-    width: 22px;
+    width: 128px;
     height: auto;
     display: block;
+    margin-bottom: 0.25rem;
 }
 
 
