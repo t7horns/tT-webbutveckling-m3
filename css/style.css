@@ -49,7 +49,6 @@ p, nav, h1, h2, h3, h4, h5, h6, ul, li, a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    margin-top: 1rem;
 }
 
 /* Padding fix for non-spanning elements.. */
@@ -97,7 +96,7 @@ nav ul {
 nav ul li a {
     display: block;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 10px 0px;
     border: 1px solid var(--gui-border-color);
     text-align: center;
     width: 100%;
@@ -145,7 +144,7 @@ img {
 }
 
 article.card {
-    margin: 1.5rem; 
+    margin: 0 1.5rem 1.5rem 1.5rem; 
     border: 1px solid var(--gui-border-color);
     background-color: var(--gui-tertiary-color);
 }
@@ -165,7 +164,6 @@ footer {
     grid-column: 1 / -1;
     text-align: center;
 }
-
 .footer-banner {
     display: flex;
     flex-direction: column;
@@ -175,6 +173,16 @@ footer {
     }
     margin-bottom: 1rem;
 }
+
+.footer-contact {
+    justify-self: start;
+}
+
+.footer-links {
+    justify-self: end;
+}
+
+
 
 /* image styling */
 .banner img {
