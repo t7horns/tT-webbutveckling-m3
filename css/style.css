@@ -35,9 +35,10 @@ h3 {
     color: var(--text-color); 
 }
 
+
 /* Border design */
-[type="box"] {
-    border-bottom: 0.25px solid var(--gui-border-color)
+.splashscreen, .introduktion, .aktivitet, .cta {
+    border-bottom: 0.25px solid var(--gui-border-color);
 }
 
 strong {
