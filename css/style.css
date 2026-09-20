@@ -166,6 +166,7 @@ article.card {
     margin: 0 2rem 2rem 2rem; 
     border: 1px solid var(--gui-border-color);
     background-color: var(--gui-tertiary-color);
+    max-width: 468px;
 }
 
 .button {
@@ -244,6 +245,10 @@ footer {
 
 
 @media (min-width: 768px) {
+    p {
+        max-width: 65ch;
+    }
+    
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -253,6 +258,23 @@ footer {
     nav ul {
         flex-direction: row;
         gap: 2rem;
+    }
+
+
+    .aktivitet {
+        display: grid;
+        align-items: center; 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .aktivitet > *:first-child {
+        grid-column: 1 / -1;
+        text-align: center;
+        justify-self: center;
     }
 
     .footer-grid {
