@@ -1,24 +1,36 @@
+/* Import mockup font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Mobile-first */
 
 :root {
-    /* Color palette */
+/* Color palette and typography */
     --background-primary-color: #E8F9EF; 
-  --accent-primary-color: #5A9A7F; 
+    --accent-primary-color: #5A9A7F; 
 
-  --gui-primary-color: #F0F4F4; 
-  --gui-secondary-color: #C3C3C3; 
-  --gui-tertiary-color: #B8C5BA; 
-  --gui-border-color: #909090; 
+    --gui-primary-color: #F0F4F4; 
+    --gui-secondary-color: #C3C3C3; 
+     --gui-tertiary-color: #B8C5BA; 
+    --gui-border-color: #909090; 
 
-  --text-color: #1F2421; 
-  --font-family: 'Arial', sans-serif;
+    --text-color: #1F2421; 
+
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Montserrat', sans-serif;
 }
 
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100%; */
-  width: 100%;
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--background-primary-color);
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--gui-primary-color);
+}
