@@ -92,6 +92,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     min-width: 140px;
+    width: 100%;
     align-items: stretch; 
     gap: 0;
 }
@@ -241,10 +242,7 @@ footer {
 }
 
 /* Media query for larger screens */
-
-
-
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     p {
         max-width: 65ch;
     }
@@ -257,9 +255,12 @@ footer {
 
     nav ul {
         flex-direction: row;
-        gap: 2rem;
+        margin: 0 auto;
     }
 
+    nav ul li {
+        flex: 1;
+    }
 
     .aktivitet {
         display: grid;
