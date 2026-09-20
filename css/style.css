@@ -90,11 +90,6 @@ img {
     height: auto;
 }
 
-.nonpadded-image {
-    padding: 0;
-}
-
-
 .cta {
     background-color: var(--gui-primary-color);
 }
