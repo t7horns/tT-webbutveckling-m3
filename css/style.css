@@ -235,6 +235,10 @@ footer {
     margin-bottom: 0.25rem;
 }
 
+.footer-info {
+    justify-self: center;
+}
+
 /* Media query for larger screens */
 
 
@@ -249,16 +253,38 @@ footer {
     nav ul {
         flex-direction: row;
         gap: 2rem;
-        margin: 0;
     }
-    
-    /* Footer grid layout for larger screens */
+
     .footer-grid {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 2rem;
     }
-    
+
+    /* Remove full-width spanning on desktop so it stays in column 1 */
     .footer-grid > *:first-child {
         grid-column: auto;
         text-align: left;
+    }
+
+    .footer-banner {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: left;
+        gap: 0 1.2rem;
+        img {
+            grid-row: span 2;
+        }
+
+        h2,
+        p {
+            margin: 0;
+            justify-self: start;
+        }
+    }
+
+    .footer-links, .footer-contact {
+        justify-self: center;
     }
 }
