@@ -44,6 +44,7 @@ strong {
     font-size: 34px;
     font-weight: 700;
 }
+
 /* Base transparency for text */
 p, nav, h1, h2, h3, h4, h5, h6, ul, li, a {
     background-color: transparent;
@@ -162,7 +163,7 @@ img {
 }
 
 article.card {
-    margin: 0 1.5rem 1.5rem 1.5rem; 
+    margin: 0 2rem 2rem 2rem; 
     border: 1px solid var(--gui-border-color);
     background-color: var(--gui-tertiary-color);
 }
@@ -214,9 +215,11 @@ footer {
 
 .footer-links {
     justify-self: end;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 }
-
-
 
 /* image styling */
 .banner img {
