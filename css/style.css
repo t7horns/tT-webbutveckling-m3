@@ -66,13 +66,36 @@ img {
     height: auto;
 }
 
-/* Class specifics */
+footer {
+    background-color: var(--accent-primary-color);
+}
 
-header .header-banner img {
+/* Footer grid layout for mobilens */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/* Make the first element span both columns and center on mobile */
+.footer-grid > *:first-child {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* image styling */
+.header-banner img {
     width: 22px;
     height: auto;
     display: block;
 }
+
+.footer-banner img {
+    width: 22px;
+    height: auto;
+    display: block;
+}
+
+
 
 /* Media query for larger screens */
 
@@ -89,5 +112,15 @@ header .header-banner img {
         flex-direction: row;
         gap: 2rem;
         margin: 0;
+    }
+    
+    /* Footer grid layout for larger screens */
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-grid > *:first-child {
+        grid-column: auto;
+        text-align: left;
     }
 }
