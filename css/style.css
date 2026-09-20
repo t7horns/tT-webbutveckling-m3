@@ -10,13 +10,18 @@
 
     --gui-primary-color: #F0F4F4; 
     --gui-secondary-color: #C3C3C3; 
-     --gui-tertiary-color: #B8C5BA; 
+    --gui-tertiary-color: #B8C5BA; 
     --gui-border-color: #909090; 
 
     --text-color: #1F2421; 
 
     --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+
 }
 
 body {
