@@ -43,6 +43,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    gap: 0.5rem;
 
 }
 
@@ -60,25 +61,22 @@ nav a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Class specifics */
 
-.logo-container {
-    background-color: transparent;
-}
-
-
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header .header-banner img {
+    width: 22px;
     height: auto;
-    width: 100%;
+    display: block;
 }
-
-
 
 /* Media query for larger screens */
+
+
 
 @media (min-width: 768px) {
     header {

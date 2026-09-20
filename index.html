@@ -10,10 +10,10 @@
 
     <body>
         <header>
-            <div class="logo-container">
+            <div class="banner">
                 <img src="images/logotyp_svart.png" alt="Logotyp svart">
                 <p>NORRGLÄNTAN</p>
-            </div>           
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Hem</a></li>
@@ -29,7 +29,7 @@
         <main>
             <!-- Sektion för introducerance innehåll t.ex. bildbanner och initial text -->
             <section class="introduktion">
-                <div class="image-container">
+                <div class="image-container" type="banner">
                     <img src="images/hero.jpg" alt="Banner-bild som visar skog och sjö">
                 </div>
                 <h1>Naturen väntar i Norrgläntan</h1>
@@ -46,7 +46,7 @@
                 <h2>Upplev Norrgläntan</h2>
                 
                 <article class="card">
-                    <div class="image-container">
+                    <div class="image-container" type="card-image">
                         <img src="images/vandra.jpg" alt="Bild som visar skogsstig">
                     </div>
                     <h3>Vandra</h3>
@@ -54,7 +54,7 @@
                 </article>
 
                 <article class="card">
-                    <div class="image-container">
+                    <div class="image-container" type="card-image">
                         <img src="images/paddla.jpg" alt="Bild som visar kanot på sjön">
                     </div>
                     <h3>Paddla</h3>
@@ -62,7 +62,7 @@
                 </article>
 
                 <article class="card">
-                    <div class="image-container">
+                    <div class="image-container" type="card-image">
                         <img src="images/upptack.jpg" alt="Bild som visar utsiktsplats med vy över skog och sjö">
                     </div>
                     <h3>Upptäck</h3>
@@ -80,20 +80,20 @@
 
         <footer>
             <hr class="divider">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="image-container">
-                        <img src="images/logotyp_vit.png" alt="Logotyp vit">
-                    </div>
+            <div class="footer-grid">
+                <div class="banner">
+                    <img src="images/logotyp_vit.png" alt="Logotyp vit">
                     <p><strong>NORRGLÄNTAN</strong></p>
                     <p>Naturupplevelser året runt.</p>
                 </div>
-                <div class="footer-contact">
+
+                <div class="contact">
                     <h3>Kontakt</h3>
                     <p><a href="mailto:info@norrglantan.com">info@norrglantan.com</a></p>
                     <p><a href="tel:0101234567">010-123 45 67</a></p>
                 </div>
-                <div class="footer-links">
+
+                <div class="links">
                     <h3>Länkar</h3>
                     <ul>
                         <li><a href="#">Upptäck</a></li>
@@ -103,6 +103,7 @@
                     </ul>
                 </div>
             </div>
+            
             <aside aria-label="projektinformation">
                 <p>© 2026 Mathias Thorgren. OBS: Detta är en fiktiv webbplats skapad för ett skolprojekt.</p>
             </aside>
