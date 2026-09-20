@@ -10,9 +10,11 @@
 
     --gui-primary-color: #F0F4F4; 
     --gui-secondary-color: #C3C3C3; 
+    --gui-secondary-color-hover: #e1e1e1;
     --gui-tertiary-color: #B8C5BA; 
     --gui-border-color: #909090; 
 
+   
     --text-color: #1F2421; 
 
     --font-heading: 'Cormorant Garamond', serif;
@@ -49,6 +51,7 @@ p, nav, h1, h2, h3, h4, h5, h6, ul, li, a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    margin: 0;
 }
 
 /* Padding fix for non-spanning elements.. */
@@ -74,7 +77,6 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-
 }
 
 nav {
@@ -89,7 +91,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     min-width: 140px;
-    align-items: stretch; /* Allows children to fill the full width */
+    align-items: stretch; 
     gap: 0;
 }
 
@@ -129,24 +131,56 @@ img {
 
 .splashscreen {
     background-color: var(--gui-primary-color);
-}
-
-.aktivitet {
-    background-color: var(--background-primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .introduktion {
     background-color: var(--gui-primary-color);
+    h2 {
+        margin-top: 0.5rem;
+    }
+}
+
+.aktivitet {
+    background-color: var(--background-primary-color);
+    h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }
 
 .cta {
     background-color: var(--gui-primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    h2 {
+        margin-top: 0.5rem;
+    }
 }
 
 article.card {
     margin: 0 1.5rem 1.5rem 1.5rem; 
     border: 1px solid var(--gui-border-color);
     background-color: var(--gui-tertiary-color);
+}
+
+.button {
+    margin: 1.5rem;
+    padding: 0.4rem;
+    background-color: var(--gui-secondary-color); 
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    border: 0.5px solid black;
+}
+
+.button:hover {
+    background-color: var(--gui-secondary-color-hover);
 }
 
 footer {
